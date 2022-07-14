@@ -1,0 +1,154 @@
+/* home */
+#home {
+    padding-top: 15vh;
+    margin: 10vh auto 10vh 25%; 
+}
+
+#home h1 {
+    font-size: 2.5em;
+}
+
+#home h1 u {
+    font-size: 1.3em;
+}
+
+/* about */
+#about {
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.about-text {
+    margin-top: 15vh;
+}
+
+.timeline {
+    margin-top: 5vh;
+    margin-left: -5px;
+}
+
+#circle {
+    color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#line {
+    margin-left: 9px;
+    border: 1px solid white;
+    width: 1px;
+    height: 130px;
+}
+
+/* skills */
+#skills {
+    padding-top: 60px;
+}
+
+.skill-footer {
+    font-size: 1.3em;
+}
+
+.skill-cards {
+    justify-content: space-around;
+}
+
+.skill-card {
+    width: 300px;
+    margin: 10px;
+}
+
+.fab {
+    font-size: 7em;
+}
+
+/* work */
+#work {
+    padding-top: 60px;
+    background-color: black;
+    color: white;
+}
+#more{
+    margin-left: 40%;
+}
+/* contact */
+#contact{
+    padding-top: 60px;
+}
+#contact-form{
+    width: 500px;
+}
+#inputs > input{
+    width:100%;
+}
+#submit-btn{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#submit-btn:hover{
+    background-color: white;
+    color: black;
+}
+#social{
+    color: black;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+}
+#social >.fab{
+    font-size: 3em;
+}
+/* mobile view */
+@media only screen and (max-width: 600px) {
+    #home {
+        margin: 10vh auto 10vh 5%;
+    }
+
+    #home h1 {
+        font-size: 2.2em;
+    }
+
+    #home h1 u {
+        font-size: 1.3em;
+    }
+
+    #about {
+        overflow: hidden;
+    }
+
+    .about-text {
+        margin-top: 2vh;
+    }
+
+    #line {
+        height: 170px;
+    }
+
+    #timeline-card {
+        width: 300px;
+    }
+
+    .skill-card {
+        width: 110px;
+    }
+
+    .skill-footer {
+        font-size: 0.93em;
+    }
+
+    .fab {
+        font-size: 4em;
+    }
+    #more{
+        margin-left: 33%;
+    }
+    #contact-form{
+        width: 80%;
+    }
+}
