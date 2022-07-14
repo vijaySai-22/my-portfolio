@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button, Row } from "react-bootstrap";
+import { Container, Form, Row } from "react-bootstrap";
 
 export default function Contact() {
   const [name, setName] = useState("");

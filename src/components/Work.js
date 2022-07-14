@@ -52,7 +52,7 @@ export default function Work() {
               );
             })}
           </Row>
-          {(more!=4)&&<Button variant="outline-light" onClick={()=>setMore(more+1)} id='more'>Show More..</Button>}
+          {(more!==4)&&<Button variant="outline-light" onClick={()=>setMore(more+1)} id='more'>Show More..</Button>}
           {/* {(more>2)&&<Button onClick={()=>setMore(more-1)} id='more'>Show Less..</Button>} */}
         </Container>
       </div>
