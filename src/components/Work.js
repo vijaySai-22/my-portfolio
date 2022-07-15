@@ -36,7 +36,7 @@ export default function Work() {
   return (
     <>
       <div id="work" className="pb-3">
-        <Container>
+        <Container >
           <h1>My Work</h1>I did some react projects as follows...
           <Row style={{ justifyContent:'space-between', margin:'auto' }}>
             {projectData.slice(0,more).map((e) => {
@@ -52,7 +52,7 @@ export default function Work() {
               );
             })}
           </Row>
-          {(more!==4)&&<Button variant="outline-light" onClick={()=>setMore(more+1)} id='more' className="mt-3">Show More..</Button>}
+          {(more!==4)&&<Button variant="outline-light" id='more' onClick={()=>setMore(more+1)}>Show More..</Button>}
           {/* {(more>2)&&<Button onClick={()=>setMore(more-1)} id='more'>Show Less..</Button>} */}
         </Container>
       </div>
@@ -61,7 +61,7 @@ export default function Work() {
 }
 function Project(props) {
   return (
-    <Card style={{ width: "330px", justifyContent:'space-around',marginTop:'10px' }} bg="light" text="dark">
+    <Card style={{ width: "330px", justifyContent:'space-around',marginTop:'10px' }} className='project-cards' bg="light" text="dark">
       <Card.Header
         style={{ fontWeight: "bolder", textAlign: "center", fontSize: "1.4em" }}
       >

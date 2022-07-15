@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import Top from "./components/Top";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Skills />
       <Work />
       <Contact />
+      <Top/>
       <div style={{textAlign:'center', backgroundColor:'black',color:'white'}}>
         Copyright &copy; 2022. All rights reserved.
       </div>

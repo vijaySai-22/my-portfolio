@@ -1,7 +1,7 @@
 /* home */
 #home {
     padding-top: 15vh;
-    margin: 10vh auto 10vh 25%; 
+    margin: 10vh auto 10vh 25%;
 }
 
 #home h1 {
@@ -11,10 +11,49 @@
 #home h1 u {
     font-size: 1.3em;
 }
-.d-btn:hover{
-    color:black;
+
+#ani-greet{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+     }
+}
+#ani-name{
+    animation: aniName 1.2s infinite;
+}
+@keyframes aniName {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+     }
+}
+
+.d-btn:hover {
+    color: black;
     background-color: white;
 }
+
 /* about */
 #about {
     padding-top: 50px;
@@ -29,6 +68,11 @@
 .timeline {
     margin-top: 5vh;
     margin-left: -5px;
+}
+.timeline-card{
+    color: black;
+    background-color: white;
+    border: 1px white solid;
 }
 
 #circle {
@@ -74,39 +118,62 @@
     background-color: black;
     color: white;
 }
-#more{
-    margin-left: 40%;
+
+#more {
+    display: table;
+    margin: 15px auto 0;
 }
+
 /* contact */
-#contact{
+#contact {
     padding-top: 60px;
 }
-#contact-form{
+
+#contact-form {
     width: 500px;
 }
-#inputs > input{
-    width:100%;
+
+#inputs>input {
+    width: 100%;
 }
-#submit-btn{
+
+#submit-btn {
     border-radius: 5px;
     background-color: black;
     color: white;
     font-size: 1.1em;
     font-weight: bold;
 }
-#submit-btn:hover{
+
+#submit-btn:hover {
     background-color: white;
     color: black;
 }
-#social{
+
+#social {
     color: black;
     width: 50%;
     margin: auto;
     justify-content: space-around;
 }
-#social >.fab{
+
+#social>.fab {
     font-size: 3em;
 }
+
+#go {
+    position: fixed;
+    z-index: 1;
+    left: 90%;
+    bottom: 30px;
+    border-radius: 50%;
+}
+
+#go>i {
+    padding-top: 5px;
+    font-size: 2em;
+}
+
 /* mobile view */
 @media only screen and (max-width: 600px) {
     #home {
@@ -133,7 +200,7 @@
         height: 170px;
     }
 
-    #timeline-card {
+    .timeline-card {
         width: 300px;
     }
 
@@ -148,10 +215,16 @@
     .fab {
         font-size: 4em;
     }
-    #more{
-        margin-left: 33%;
+
+    .project-cards {
+        margin: auto;
     }
-    #contact-form{
+
+    #contact-form {
         width: 80%;
+    }
+
+    #go {
+        left: 85%;
     }
 }

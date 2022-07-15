@@ -8,7 +8,7 @@ export default function Mynavbar() {
   return (
     <Navbar fixed="top" bg="dark" variant="dark" expand="lg" expanded={expand}>
       <Container>
-        <Navbar.Brand href="#home">Vijay</Navbar.Brand>
+        <Navbar.Brand href="#home"><b>VIJAY</b></Navbar.Brand>
         <Navbar.Toggle onClick={() => setExpand(!expand)} />
         <Navbar.Collapse>
           <Nav className="ml-auto">
