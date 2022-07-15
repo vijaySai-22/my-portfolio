@@ -11,7 +11,10 @@
 #home h1 u {
     font-size: 1.3em;
 }
-
+.d-btn:hover{
+    color:black;
+    background-color: white;
+}
 /* about */
 #about {
     padding-top: 50px;
