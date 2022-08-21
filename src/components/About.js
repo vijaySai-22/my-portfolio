@@ -66,7 +66,7 @@ export default function About() {
               <p>
                 My full name is Vijay Sai Prasad Pujari. I am a graduate
                 student, looking for a job. I completed my Bachelors's in
-                Computer Application from Kakiada Sri Aditya Degree College
+                Computer Application from Kakinada Sri Aditya Degree College
                 affiliated to Dr. B.R Ambedkar University, Srikakulam, AP.
               </p>
               <p>I am very much interested in front-end web develpoment.</p>
